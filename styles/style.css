@@ -6,6 +6,8 @@ html {
   height: 100vh;
 }
 
+/*vh staat voor viewport height. 1vh staat gelijk aan 1% van the viewport height. */
+
 body {
   display: flex;
   justify-content: center;
@@ -15,7 +17,9 @@ body {
   color: #1c1d20;
 }
 
-p {
+/*De body (card) wordt flexibel door de display op flexibel te zetten*/
+/*De CSS justify-content bepaalt hoe de browser ruimte verdeelt tussen en rondom elementen binnen een flex-container zodat de inhoud netjs uitgelijnd wordt binnen een*/
+h3, p {
   padding-left: 3rem;
   padding-right: 15rem;
 }
