@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/*Bepaalt of de rand en binnenruimte van een element bij de afmetingen worden opgeteld zodat het element niet groter wordt dan je instelt*/
 
 html {
   height: 100vh;
@@ -19,10 +20,12 @@ body {
 
 /*De body (card) wordt flexibel door de display op flexibel te zetten*/
 /*De CSS justify-content bepaalt hoe de browser ruimte verdeelt tussen en rondom elementen binnen een flex-container zodat de inhoud netjs uitgelijnd wordt binnen een*/
+
 h3, p {
   padding-left: 3rem;
   padding-right: 15rem;
 }
+/*Hiermee heb ik de de plaatsing van mijn header en paragraaf bepaald*/
 
 article {
   position: relative;
@@ -40,14 +43,9 @@ article {
 }
 
 /*Met de background propertie heb ik een value (kleurcode) gegeven aan de achtergrond van mijn visitekaartje*/
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-}
+/*Position: relative beteken dat een element normaal op de pagina wordt geplaatst, maar dta je het daarna kunt verplaatsen ten opzichte van zijn normale postitie. Je kun het verschuiven met de eigenschappen: top, bottom, left en right.*/
+/*display: flex: dit zorgt ervoor dat een container een flexbox wordt. Dit betekent dat de items binnen die container automatisch flexibel zijn */
+/*Met border-radius maak ik mijn randen rond*/
 
 button {
   position: absolute;
@@ -57,21 +55,16 @@ button {
   height: 2.5rem;
   padding: .25rem;
   border: none;
-  border-radius: 50%;
+  border-radius: 90%;
   background: rgb(8, 8, 8);
   transform: scale(.8);
-  transition: .25s;
+  transition: 1s;
   cursor: pointer;
 }
 
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
+/*Right, top, width, height, padding bepaalt de vorm en positie van de button.*/
+/*De transition bepaalt de tijd waarin de button verschijnt */
+/*Met de cursor: pointer verandert de pointer is een hand als je over de button veegt*/
 
 button:focus {
   outline: none;
@@ -99,7 +92,7 @@ img {
   position: relative;
   top: 0rem;
   height: auto;
-  transition: .25s .15s;
+  transition: .5s;
 }
 
 /* expand content: oftwel wat er gebeurd als de afbeelding wordt vergroot */
