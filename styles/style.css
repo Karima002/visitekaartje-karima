@@ -42,6 +42,12 @@ article {
   transition: 0.5s;
 }
 
+@media only screen and (max-width: 430px) {
+  main{
+    width: 300px
+  }
+}
+
 /*Met de background propertie heb ik een value (kleurcode) gegeven aan de achtergrond van mijn visitekaartje*/
 /*Position: relative beteken dat een element normaal op de pagina wordt geplaatst, maar dta je het daarna kunt verplaatsen ten opzichte van zijn normale postitie. Je kun het verschuiven met de eigenschappen: top, bottom, left en right.*/
 /*display: flex: dit zorgt ervoor dat een container een flexbox wordt. Dit betekent dat de items binnen die container automatisch flexibel zijn */
